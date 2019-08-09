@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,sq,qbe,len,ans,i,rem;
+    char s[25],q[25];
+    scanf("%d",&a);
+    sq=a*a;
+    qbe=a*a*a;
+    sprintf(s,"%d",sq);
+    sprintf(q,"%d",qbe);
+    strcat(s,q);
+    len=strlen(s);
+    ans=atoi(s);
+    for(i=0;i<len;i++){
+        rem=ans%10;
+        printf("%d",rem);
+        ans=ans/10;
+    }
+    return 0;
+}
