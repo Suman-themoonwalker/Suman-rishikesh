@@ -2,7 +2,7 @@
 #include<math.h>
 int main()
 {
-    int sqside,speed1,speed2,area;
+    int sqside,speed1,speed2,area;//For the exact decimal values...use the float type
     scanf("%d %d %d %d",&sqside,&speed1,&speed2,&area);
     int dist,dist1,dist2,speed;
     float time;
